@@ -1,3 +1,10 @@
 CompileFlags:
   Compiler: /usr/bin/clang++
-  Add: [-std=c++20, -Wall, -Wextra, -pedantic, -Wshadow, -Wnon-virtual-dtor, -Wimplicit-fallthrough, -Wlifetime ]
+  Add: [-std=c++2b, -Wall, -Wextra, -pedantic, -Wshadow, -Wnon-virtual-dtor, -Wimplicit-fallthrough, -Wlifetime]
+Diagnosticswithatypo:
+  Suppress: [-Wunused-macros, -Wunused-member-function, -Wunused-template]
+---
+If:
+  PathMatch: .*\.hpp
+Diagnostics:
+  Suppress: -Wunused-function

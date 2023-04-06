@@ -1,0 +1,8 @@
+-std=c++2b
+-Wall
+Wextra
+-pedantic
+-Wshadow
+-Wnon-virtual-dtor
+-Wimplicit-fallthrough
+-Wlifetime
